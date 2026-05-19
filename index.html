@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoberAI — Legal</title>
+  <title>Terms &amp; Conditions — SoberAI</title>
   <style>
     :root {
       --bg: #1a0a18;
@@ -12,101 +12,326 @@
       --muted: #a89aa3;
       --accent: #ff3d8b;
       --accent-2: #b933e6;
+      --warn-bg: #3a1a0a;
+      --warn-border: #8b4500;
+      --warn-text: #ffb86c;
       --border: rgba(255, 255, 255, 0.08);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
+      line-height: 1.65;
+      padding: 24px 20px 60px;
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 16px;
     }
-    .container {
-      max-width: 480px;
-      width: 100%;
+    .header {
       text-align: center;
+      padding: 32px 0 28px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
     }
-    .logo {
-      width: 80px;
-      height: 80px;
+    .badge {
+      display: inline-block;
+      width: 56px;
+      height: 56px;
       background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      border-radius: 22px;
-      margin: 0 auto 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 40px;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .badge::after {
+      content: "⚖️";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 28px;
     }
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: 700;
       margin-bottom: 8px;
       letter-spacing: -0.5px;
     }
-    .subtitle {
+    .meta {
       color: var(--muted);
-      margin-bottom: 36px;
-      font-size: 15px;
+      font-size: 14px;
+      font-style: italic;
     }
-    .link-card {
-      display: block;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 20px 24px;
-      margin-bottom: 12px;
-      text-decoration: none;
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 32px 0 12px;
       color: var(--text);
-      text-align: left;
-      transition: transform 0.15s, border-color 0.15s;
+      letter-spacing: -0.3px;
     }
-    .link-card:hover {
-      transform: translateY(-2px);
-      border-color: var(--accent);
-    }
-    .link-card .title {
+    h3 {
       font-size: 17px;
       font-weight: 600;
-      margin-bottom: 4px;
+      margin: 22px 0 10px;
+      color: var(--accent);
     }
-    .link-card .desc {
-      font-size: 13px;
-      color: var(--muted);
+    p { margin-bottom: 14px; color: var(--text); }
+    ul { margin: 10px 0 16px 22px; padding: 0; }
+    li { margin-bottom: 8px; color: var(--text); }
+    strong { color: var(--text); font-weight: 600; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .warning-box {
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 16px 0 24px;
+    }
+    .warning-box p {
+      color: var(--warn-text);
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .warning-box p:last-child { margin-bottom: 0; }
+
+    .all-caps {
+      background: var(--card);
+      border-left: 3px solid var(--accent);
+      padding: 14px 18px;
+      margin: 14px 0;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .contact {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    .final-ack {
+      background: linear-gradient(135deg, rgba(255, 61, 139, 0.12), rgba(185, 51, 230, 0.12));
+      border: 1px solid var(--accent);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 32px 0 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 14.5px;
+      line-height: 1.55;
     }
     .footer {
-      margin-top: 32px;
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
       color: var(--muted);
       font-size: 13px;
     }
-    .footer a { color: var(--accent); text-decoration: none; }
+    @media (max-width: 480px) {
+      body { padding: 16px 16px 40px; font-size: 15px; }
+      h1 { font-size: 24px; }
+      h2 { font-size: 18px; }
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="logo">🍺</div>
-    <h1>SoberAI</h1>
-    <p class="subtitle">Know before you go</p>
- 
-    <a href="privacy.html" class="link-card">
-      <div class="title">🔒 Privacy Policy</div>
-      <div class="desc">How we handle your data</div>
-    </a>
- 
-    <a href="terms.html" class="link-card">
-      <div class="title">⚖️ Terms &amp; Conditions</div>
-      <div class="desc">Terms of use and legal disclaimers</div>
-    </a>
- 
-    <a href="support.html" class="link-card">
-      <div class="title">💬 Support</div>
-      <div class="desc">Get in touch with us</div>
-    </a>
- 
-    <p class="footer">© 2026 SoberAI · <a href="mailto:thesalarsaber@gmail.com">thesalarsaber@gmail.com</a></p>
+  <div class="header">
+    <div class="badge"></div>
+    <h1>Terms &amp; Conditions</h1>
+    <p class="meta">SoberAI · Effective May 18, 2026</p>
+  </div>
+
+  <div class="warning-box">
+    <p>⚠️ IMPORTANT — PLEASE READ CAREFULLY BEFORE USING THIS APP.</p>
+    <p>These Terms contain a binding arbitration clause and class action waiver (Section 14) that affect your legal rights. They also contain important limitations on liability and a disclaimer of warranties.</p>
+    <p>By downloading, installing, or using SoberAI, you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
+  </div>
+
+  <h2>1. Acceptance of Terms</h2>
+  <p>These Terms and Conditions ("Terms") form a binding legal agreement between you ("you," "your," or "User") and Salar Saber, the individual developer of the SoberAI mobile application ("we," "us," "our," or "Developer"). These Terms govern your access to and use of the SoberAI application and all associated features, content, and services (collectively, the "App").</p>
+  <p>By downloading, installing, accessing, or using the App in any way, you confirm that you have read, understood, and agree to be bound by these Terms in their entirety, including the Privacy Policy incorporated herein by reference. If you do not agree with any part of these Terms, you must immediately discontinue use of the App and uninstall it from your device.</p>
+
+  <h2>2. Eligibility</h2>
+  <p>You must be at least 18 years of age to download or use SoberAI, in accordance with the App's Apple App Store age rating. By using the App, you represent and warrant that:</p>
+  <ul>
+    <li>You are at least 18 years old.</li>
+    <li>You have the legal capacity to enter into a binding agreement under the laws of your jurisdiction.</li>
+    <li>You are of legal drinking age in your jurisdiction if using the App in connection with alcohol consumption.</li>
+    <li>You are not prohibited from using the App under any applicable law, regulation, or court order.</li>
+    <li>You will use the App only for lawful purposes and in accordance with these Terms.</li>
+  </ul>
+  <p>We reserve the right to terminate your access to the App if we discover or have reason to believe that you do not meet these eligibility requirements.</p>
+
+  <h2>3. Nature of the App — Estimation Only, Not a Measurement</h2>
+  <div class="all-caps">SOBERAI IS AN EDUCATIONAL AND INFORMATIONAL TOOL ONLY. IT IS NOT A BREATHALYZER, A MEDICAL DEVICE, A DIAGNOSTIC INSTRUMENT, OR A LEGALLY RECOGNIZED METHOD OF MEASURING BLOOD ALCOHOL CONCENTRATION.</div>
+
+  <p><strong>3.1 What SoberAI does.</strong> SoberAI takes information you voluntarily provide — such as your age, sex, height, weight, drinks consumed, time of consumption, food intake, water intake, and medications — and produces an estimated Blood Alcohol Concentration (BAC) value using the Widmark formula and similar publicly available models. The App may also produce an estimated time until your BAC is likely to fall below the United States legal driving limit (0.08%), and a separate estimated time until your BAC is likely to reach 0.00%.</p>
+
+  <p><strong>3.2 What SoberAI does NOT do.</strong> SoberAI does not measure your actual BAC. It does not detect, sense, or test alcohol in your body. It cannot determine whether you are impaired. It cannot determine whether you are legally permitted to drive in any specific jurisdiction. It is not a substitute for a breathalyzer, blood test, urine test, field sobriety test, or any other scientifically validated measurement.</p>
+
+  <p><strong>3.3 Inherent inaccuracy.</strong> The estimates produced by SoberAI are based on generalized formulas that cannot fully account for the unique biological, physiological, behavioral, and environmental factors that affect how alcohol is absorbed, distributed, metabolized, and eliminated by an individual human body. Factors that influence actual BAC but that SoberAI cannot measure or accurately predict include, without limitation:</p>
+  <ul>
+    <li>Individual variation in liver function and metabolic rate.</li>
+    <li>Genetic differences in alcohol dehydrogenase (ADH) and aldehyde dehydrogenase (ALDH) enzymes.</li>
+    <li>Hydration level beyond what you self-report.</li>
+    <li>Stomach contents, type of food eaten, and rate of gastric emptying.</li>
+    <li>Hormonal fluctuations, menstrual cycle, and pregnancy status.</li>
+    <li>Medications, supplements, and recreational substances — including any not disclosed to the App.</li>
+    <li>Pre-existing or undiagnosed medical conditions (including but not limited to liver disease, diabetes, kidney disease, gastritis, and gastrointestinal disorders).</li>
+    <li>Body composition, including muscle-to-fat ratio.</li>
+    <li>Sleep, fatigue, stress level, and emotional state.</li>
+    <li>The actual alcohol content of the specific drinks you consumed, which often differs from standard estimates.</li>
+    <li>The rate, pattern, and timing of consumption beyond what you self-report.</li>
+    <li>Tolerance and frequency of prior alcohol consumption.</li>
+    <li>Inaccurate, incomplete, or false information that you provide to the App.</li>
+    <li>Any other factor not captured in the App's input fields.</li>
+  </ul>
+
+  <p><strong>3.4 Estimates may be wrong — sometimes significantly.</strong> Because of the factors described in Section 3.3, the BAC estimate and time-to-sober estimate produced by SoberAI may differ substantially from your actual BAC at any given moment. The App may overestimate or underestimate your BAC. The App may indicate that you are below the legal driving limit when in fact you are above it, or vice versa. You acknowledge and accept this inherent and unavoidable inaccuracy as a condition of using the App.</p>
+
+  <p><strong>3.5 No permission to drive.</strong> Nothing displayed by SoberAI constitutes permission, authorization, advice, or a recommendation to operate a motor vehicle, motorcycle, boat, bicycle, scooter, aircraft, or any other vehicle or machinery. The App does not grant you legal clearance to drive. The decision to drive — or to engage in any other activity requiring sobriety, coordination, or judgment — is yours and yours alone.</p>
+
+  <h2>4. User Responsibility and Assumption of Risk</h2>
+  <div class="all-caps">YOU EXPRESSLY ASSUME ALL RISK ASSOCIATED WITH YOUR USE OF SOBERAI AND ANY DECISIONS YOU MAKE BASED ON THE APP'S ESTIMATES OR OUTPUT.</div>
+  <p>You acknowledge and agree that:</p>
+  <ul>
+    <li>You are solely responsible for any decision to drive, operate machinery, or engage in any other activity following alcohol consumption.</li>
+    <li>You will never rely solely on SoberAI to make a decision about whether to drive.</li>
+    <li>If you feel impaired in any way, you will not drive, regardless of what the App displays.</li>
+    <li>You will obey all applicable laws regarding alcohol consumption, public intoxication, and the operation of motor vehicles, including but not limited to laws against driving under the influence (DUI), driving while intoxicated (DWI), and operating under the influence (OUI).</li>
+    <li>You understand that the legal BAC limit varies by jurisdiction (for example, 0.08% in most U.S. states, 0.05% in Utah and in many countries outside the U.S., and zero-tolerance limits for drivers under 21, commercial drivers, and certain other categories), and that SoberAI's references to the legal limit are general informational references only and may not reflect the limit applicable to you.</li>
+    <li>You will not use the App to determine whether you can safely operate a vehicle in any zero-tolerance context (including but not limited to operating a commercial vehicle, flying an aircraft, or driving while under 21).</li>
+    <li>You will not use the App in any manner that endangers yourself or others.</li>
+  </ul>
+
+  <h2>5. No Medical, Legal, or Professional Advice</h2>
+  <p>SoberAI does not provide medical advice, legal advice, or professional advice of any kind. The information and estimates produced by the App are for general educational and informational purposes only.</p>
+  <ul>
+    <li>Always seek the advice of a qualified physician or healthcare provider with any questions regarding alcohol consumption, medication interactions, or any medical condition.</li>
+    <li>Always seek the advice of a qualified attorney with any questions regarding the legal consequences of alcohol consumption or driving.</li>
+    <li>Nothing in the App should be interpreted as a substitute for professional medical or legal advice, diagnosis, or treatment.</li>
+    <li>Never disregard professional medical or legal advice or delay seeking it because of something you read or see in the App.</li>
+  </ul>
+
+  <h2>6. AI-Generated Content</h2>
+  <p>SoberAI uses third-party artificial intelligence services (including OpenAI's GPT-4o) to generate assessments, recommendations, and explanatory text. You acknowledge and agree that:</p>
+  <ul>
+    <li>AI-generated content may contain inaccuracies, errors, or "hallucinations" — outputs that appear plausible but are factually incorrect.</li>
+    <li>The AI model is not aware of your specific medical history, current physical condition, or any factors not provided as input.</li>
+    <li>AI-generated recommendations are not professional advice and should not be relied upon for any consequential decision, including the decision to drive.</li>
+    <li>We do not guarantee the accuracy, completeness, timeliness, or usefulness of any AI-generated content displayed in the App.</li>
+    <li>You will treat all AI-generated content as a starting point for your own independent judgment, not as a definitive answer.</li>
+  </ul>
+
+  <h2>7. Disclaimer of Warranties</h2>
+  <div class="all-caps">THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</div>
+  <p>To the maximum extent permitted by applicable law, we expressly disclaim all warranties, including without limitation:</p>
+  <ul>
+    <li>All implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement.</li>
+    <li>Any warranty that the App will be accurate, reliable, complete, timely, secure, error-free, or uninterrupted.</li>
+    <li>Any warranty that the App's BAC estimates, sober-time estimates, or recommendations will match your actual physiological state.</li>
+    <li>Any warranty that defects in the App will be corrected.</li>
+    <li>Any warranty arising from course of dealing, course of performance, or usage of trade.</li>
+  </ul>
+  <p>You acknowledge that no advice or information, whether oral or written, obtained from us, through the App, or from any third party, will create any warranty not expressly stated in these Terms.</p>
+
+  <h2>8. Limitation of Liability</h2>
+  <div class="all-caps">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION DAMAGES FOR PERSONAL INJURY, WRONGFUL DEATH, PROPERTY DAMAGE, LOSS OF PROFITS, LOSS OF DATA, LOSS OF GOODWILL, OR ANY OTHER INTANGIBLE LOSSES, ARISING OUT OF OR RELATING TO YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</div>
+  <p>This limitation applies to all claims, whether based in contract, tort (including negligence), strict liability, statute, or any other legal theory, and applies regardless of whether the damages are foreseeable.</p>
+  <div class="all-caps">IN ANY EVENT, OUR TOTAL CUMULATIVE LIABILITY TO YOU FOR ANY AND ALL CLAIMS ARISING OUT OF OR RELATING TO THE APP OR THESE TERMS SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU ACTUALLY PAID US, IF ANY, FOR USE OF THE APP IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR (B) ONE HUNDRED U.S. DOLLARS ($100 USD).</div>
+  <p>Some jurisdictions do not allow the exclusion or limitation of certain warranties or damages, so some of the above exclusions and limitations may not apply to you. In such jurisdictions, our liability is limited to the maximum extent permitted by law.</p>
+
+  <h2>9. Indemnification</h2>
+  <p>To the maximum extent permitted by law, you agree to defend, indemnify, and hold harmless the Developer, and any successors, assigns, agents, contractors, and affiliates, from and against any and all claims, demands, actions, proceedings, liabilities, damages, judgments, settlements, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or related to:</p>
+  <ul>
+    <li>Your use or misuse of the App.</li>
+    <li>Your violation of these Terms.</li>
+    <li>Your violation of any law, regulation, or ordinance, including any law related to alcohol consumption, public intoxication, or the operation of motor vehicles or other machinery.</li>
+    <li>Your violation of any third party's rights, including but not limited to bodily injury, wrongful death, property damage, or any other harm caused to a third party by your actions or decisions.</li>
+    <li>Any decision you make based in whole or in part on output from the App, including but not limited to a decision to drive, operate machinery, or engage in any other activity.</li>
+    <li>Any information you provided to the App that was inaccurate, incomplete, or false.</li>
+  </ul>
+  <p>We reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which case you agree to cooperate with our defense of such claim.</p>
+
+  <h2>10. Prohibited Uses</h2>
+  <p>You agree not to use the App:</p>
+  <ul>
+    <li>In any way that violates any applicable federal, state, local, or international law or regulation.</li>
+    <li>To make decisions in zero-tolerance contexts (e.g., commercial driving, aviation, operation by individuals under the legal drinking age).</li>
+    <li>To encourage, facilitate, or enable drunk driving or any other unlawful or dangerous activity by yourself or any other person.</li>
+    <li>To make medical or legal decisions of any kind.</li>
+    <li>In any manner that could disable, overburden, damage, or impair the App or interfere with any other party's use of the App.</li>
+    <li>To use any robot, spider, or other automatic device, process, or means to access the App for any purpose, including monitoring or copying any of the material on the App.</li>
+    <li>To reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code of the App.</li>
+    <li>To use the App to develop a competing product or service.</li>
+  </ul>
+
+  <h2>11. Intellectual Property</h2>
+  <p>The App, including all content, features, functionality, source code, design, graphics, logos, text, and the SoberAI name and brand, is owned by the Developer and is protected by United States and international copyright, trademark, and other intellectual property laws.</p>
+  <p>You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for your personal, non-commercial use, strictly in accordance with these Terms. You may not:</p>
+  <ul>
+    <li>Copy, modify, distribute, sell, lease, or sublicense any part of the App.</li>
+    <li>Remove any proprietary notices or labels from the App.</li>
+    <li>Use the App's name, logo, or trademarks without our prior written consent.</li>
+  </ul>
+
+  <h2>12. In-App Purchases</h2>
+  <p>The App may offer in-app purchases processed exclusively through Apple's In-App Purchase system. All in-app purchases are governed by Apple's terms and conditions. We do not handle, store, or process your payment information. Refund requests for in-app purchases must be submitted to Apple.</p>
+
+  <h2>13. Termination</h2>
+  <p>We reserve the right to terminate or suspend your access to the App at any time, without notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties, or for any other reason at our sole discretion.</p>
+  <p>Upon termination, your right to use the App will immediately cease. The provisions of these Terms that by their nature should survive termination shall survive, including without limitation Sections 3, 4, 5, 7, 8, 9, 14, and 15.</p>
+
+  <h2>14. Governing Law, Arbitration, and Class Action Waiver</h2>
+  <p><strong>14.1 Governing Law.</strong> These Terms shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of laws principles.</p>
+  <p><strong>14.2 Binding Individual Arbitration.</strong> Any dispute, claim, or controversy arising out of or relating to these Terms, the App, or your use of the App (each, a "Dispute") shall be resolved exclusively through final and binding individual arbitration administered by the American Arbitration Association (AAA) under its Consumer Arbitration Rules, rather than in court, except that you may assert claims in small claims court if your claims qualify.</p>
+  <div class="all-caps">14.3 CLASS ACTION WAIVER. YOU AND THE DEVELOPER AGREE THAT ANY DISPUTE RESOLUTION PROCEEDINGS WILL BE CONDUCTED ONLY ON AN INDIVIDUAL BASIS AND NOT IN A CLASS, COLLECTIVE, CONSOLIDATED, OR REPRESENTATIVE ACTION. YOU WAIVE ANY RIGHT TO PARTICIPATE IN A CLASS ACTION LAWSUIT OR CLASS-WIDE ARBITRATION.</div>
+  <p><strong>14.4 30-Day Right to Opt Out.</strong> You may opt out of the arbitration agreement and class action waiver in this Section 14 by sending written notice of your decision to opt out to <a href="mailto:thesalarsaber@gmail.com">thesalarsaber@gmail.com</a> within thirty (30) days after first using the App. Your notice must include your name, the email address associated with your usage, and a clear statement that you wish to opt out. If you opt out, all other provisions of these Terms will remain in effect.</p>
+  <p><strong>14.5 Exceptions.</strong> Notwithstanding the above, either party may bring an individual action in small claims court, or seek injunctive or equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation, or violation of intellectual property rights.</p>
+
+  <h2>15. Severability</h2>
+  <p>If any provision of these Terms is held by a court or arbitrator of competent jurisdiction to be invalid, illegal, or unenforceable, that provision shall be deemed modified to the minimum extent necessary to make it enforceable, or if it cannot be so modified, it shall be severed from these Terms, and the remaining provisions shall continue in full force and effect.</p>
+
+  <h2>16. No Waiver</h2>
+  <p>Our failure to enforce any right or provision of these Terms shall not be considered a waiver of that right or provision. No waiver of any term shall be deemed a continuing waiver of such term or any other term.</p>
+
+  <h2>17. Entire Agreement</h2>
+  <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and the Developer regarding the App and supersede all prior or contemporaneous communications, agreements, and proposals, whether oral or written, between you and us.</p>
+
+  <h2>18. Changes to These Terms</h2>
+  <p>We reserve the right to modify these Terms at any time. If we make material changes, we will update the "Last Updated" date at the top of this document and, where appropriate, provide additional notice within the App. Your continued use of the App after changes become effective constitutes your acceptance of the revised Terms. If you do not agree to the revised Terms, you must stop using the App.</p>
+
+  <h2>19. Apple-Specific Terms</h2>
+  <p>If you downloaded the App from the Apple App Store, you acknowledge that:</p>
+  <ul>
+    <li>These Terms are between you and the Developer only, not with Apple. Apple is not responsible for the App or its content.</li>
+    <li>Apple has no obligation to provide maintenance or support services for the App.</li>
+    <li>In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple may refund the purchase price (if any). Apple has no other warranty obligation whatsoever with respect to the App.</li>
+    <li>The Developer, not Apple, is responsible for addressing any User claims relating to the App or your use of it, including product liability claims, claims that the App fails to conform to any applicable legal or regulatory requirement, and claims arising under consumer protection or similar legislation.</li>
+    <li>Apple and Apple's subsidiaries are third-party beneficiaries of these Terms and will have the right to enforce these Terms against you.</li>
+  </ul>
+
+  <h2>20. Contact</h2>
+  <div class="contact">
+    <p style="margin-bottom:6px"><strong>Salar Saber</strong></p>
+    <p style="margin-bottom:6px">Developer of SoberAI</p>
+    <p style="margin-bottom:0">Email: <a href="mailto:thesalarsaber@gmail.com">thesalarsaber@gmail.com</a></p>
+  </div>
+
+  <div class="final-ack">
+    BY USING SOBERAI, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS, UNDERSTAND THEM, AGREE TO BE BOUND BY THEM, AND ACCEPT FULL RESPONSIBILITY FOR ALL DECISIONS YOU MAKE BASED ON THE APP'S OUTPUT.
+  </div>
+
+  <div class="footer">
+    <p>© 2026 SoberAI · <a href="privacy.html">Privacy Policy</a></p>
   </div>
 </body>
 </html>
